@@ -18,9 +18,8 @@ body {
  ************************************************/
 
 .container {
-    margin: auto;
-    width: 85%;
-    height: 100%;
+    margin: 0 auto;
+    width: 80%;
     max-width: 1280px;
 
 }
@@ -48,9 +47,73 @@ header {
     z-index: 9;
 }
 
+#head {
+    height: 100%;
+}
+
 #nav-desktop {
     display: none;
 
+}
+
+/* SECTION 1 - Get a demo */
+
+.demo {
+    padding-top: 130px;
+}
+
+.demo>div {
+    background-color: #a6c9ef;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.demo h2 {
+    color: rgb(21, 113, 226);
+    padding-top: 40px;
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+.demo p {
+    color: rgb(109, 110, 111);
+    font-weight: bold;
+    padding: 20px 40px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.demo img {
+    width: 70%;
+}
+
+.demo button {
+    width: 65%;
+    padding: 10px 30px;
+    margin: 20px;
+    color: white;
+    border: none;
+    background-color: rgb(21, 113, 226);
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.acc,
+.acc1 {
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.acc>i {
+    font-size: 100px;
+    color: rgb(21, 113, 226);
+    padding-top: 20px;
+}
+
+.acc>p {
+    text-align: center;
 }
 
 
@@ -60,7 +123,9 @@ header {
 
 
 /* Media Query TABLET */
-@media all and (min-width: 481px) {}
+@media all and (min-width: 481px) {
+    .demo {}
+}
 
 
 
