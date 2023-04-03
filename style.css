@@ -1,0 +1,91 @@
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+/************************************************
+    UTILITIES - - COMMON CLASSES
+ ************************************************/
+
+.container {
+    margin: auto;
+    width: 85%;
+    height: 100%;
+    max-width: 1280px;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+/************************************************
+    SITE SECTIONS
+ ************************************************/
+/* Header */
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 2em;
+    position: fixed;
+    z-index: 9;
+}
+
+#nav-desktop {
+    display: none;
+
+}
+
+
+/************************************************
+     RESPONSIVE
+ ************************************************/
+
+
+/* Media Query TABLET */
+@media all and (min-width: 481px) {}
+
+
+
+
+/* Media Query DESKTOP */
+
+@media all and (min-width: 769px) {
+
+
+    #hamburger {
+        display: none;
+    }
+
+    #nav-desktop {
+        display: block;
+        font-size: 17px;
+    }
+
+    #nav-desktop>span {
+        padding-right: 10px;
+    }
+
+    #nav-desktop>button {
+        border-radius: 9%;
+        border: none;
+        padding: 4px 7px;
+    }
+}
