@@ -14,14 +14,23 @@ body {
 
 
 /************************************************
-    UTILITIES - - COMMON CLASSES
+    UTILITIES --- COMMON CLASSES
  ************************************************/
 
 .container {
     margin: 0 auto;
     width: 80%;
     max-width: 1280px;
+}
 
+.bc-violet {
+    background-color: rgb(151, 146, 228);
+    color: white;
+    padding-bottom: 70px;
+}
+
+.container img {
+    max-width: 100%;
 }
 
 .row {
@@ -40,7 +49,7 @@ body {
 header {
     height: 80px;
     width: 100%;
-    background-color: lightseagreen;
+    background-color: rgb(0, 132, 253);
     color: white;
     font-size: 2em;
     position: fixed;
@@ -56,10 +65,14 @@ header {
 
 }
 
+
+
+
 /* SECTION 1 - Get a demo */
 
 .demo {
     padding-top: 130px;
+    padding-bottom: 80px;
 }
 
 .demo>div {
@@ -69,7 +82,7 @@ header {
 }
 
 .demo h2 {
-    color: rgb(21, 113, 226);
+    color: rgb(0, 132, 253);
     padding-top: 40px;
     padding-right: 20px;
     font-size: 30px;
@@ -93,22 +106,28 @@ header {
     margin: 20px;
     color: white;
     border: none;
-    background-color: rgb(21, 113, 226);
+    background-color: rgb(0, 132, 253);
     border-radius: 20px;
     font-size: 17px;
     font-weight: bold;
 }
 
 .acc,
-.acc1 {
+.acc1,
+.acc2 {
     margin-top: 20px;
     width: 100%;
-
 }
 
 .acc>i {
     font-size: 100px;
-    color: rgb(21, 113, 226);
+    color: rgb(0, 132, 253);
+    padding-top: 20px;
+}
+
+.acc2>i {
+    font-size: 100px;
+    color: rgb(0, 132, 253);
     padding-top: 20px;
 }
 
@@ -116,6 +135,60 @@ header {
     text-align: center;
 }
 
+.acc1-left,
+.acc1-right {
+    display: inline-block;
+    width: 48%;
+}
+
+
+
+
+/* SECTION 2 - Strategic Plannig */
+
+.strategic-left {
+    padding-top: 50px;
+}
+
+.strategic-left>h2 {
+    padding: 50px 0px;
+    font-size: 35px;
+}
+
+.strategic-left>p {
+    line-height: 30px;
+    padding-bottom: 50px;
+}
+
+
+.strategic-right {
+    padding-top: 50px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    color: black;
+}
+
+.strategic-right>h2 {
+    padding: 20px 0px;
+}
+
+.strategic-right>p {
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(80, 79, 79);
+    padding: 10px;
+    font-style: italic;
+}
+
+.strategic-right>i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(151, 146, 228);
+    border-radius: 50px;
+    margin-bottom: 25px;
+}
 
 /************************************************
      RESPONSIVE
@@ -124,17 +197,73 @@ header {
 
 /* Media Query TABLET */
 @media all and (min-width: 481px) {
-    .demo {}
+
+    /* Section - 1 */
+    .container {
+        width: 90%;
+    }
+
+    .demo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .demo h2 {
+        font-size: 25px;
+    }
+
+    .acc1 {
+        width: 63%;
+    }
+
+    .acc2,
+    .acc {
+        width: 32%;
+    }
+
+    .acc>i,
+    .acc2>i {
+        font-size: 70px;
+    }
+
+    .acc1 button,
+    .acc1 img {
+        position: relative;
+        right: 50px;
+        top: 5px;
+    }
+
+    /* Section - 2 */
+
+    .strategic-left>p {
+        font-size: 12px;
+    }
+
+    .strategic-right>p {
+        font-size: 12px;
+        padding: 0px 50px;
+    }
+
+    .strategic-right>i {
+        margin-top: 20px;
+    }
+
+
+
+
+
+
 }
+
 
 
 
 
 /* Media Query DESKTOP */
 
-@media all and (min-width: 769px) {
+@media all and (min-width: 768px) {
 
-
+    /* nav */
     #hamburger {
         display: none;
     }
@@ -149,8 +278,72 @@ header {
     }
 
     #nav-desktop>button {
-        border-radius: 9%;
+        border-radius: 20px;
         border: none;
-        padding: 4px 7px;
+        padding: 7px 20px;
     }
+
+    /* Section - 1 */
+    .container {
+        width: 90%;
+    }
+
+    .demo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .acc1 {
+        width: 63%;
+    }
+
+    .acc2,
+    .acc {
+        width: 32%;
+    }
+
+    .acc1 button,
+    .acc1 img {
+        position: static;
+    }
+
+
+    /* Section - 2 */
+    .strategic {
+        width: 70%;
+        margin: auto;
+    }
+
+    .strategic-left,
+    .strategic-right {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .strategic-left {
+        position: relative;
+        left: 50px;
+        top: 60px;
+    }
+
+    .strategic-left img {
+        width: 90%;
+        padding-bottom: 30px;
+    }
+
+    .strategic-right {
+        position: relative;
+        left: 100px;
+        top: 20px;
+    }
+
+    .strategic-right img {
+        width: 50%;
+    }
+
+
+
+
+
+
 }
