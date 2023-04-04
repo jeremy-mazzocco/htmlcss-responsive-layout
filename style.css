@@ -190,6 +190,59 @@ header {
     margin-bottom: 25px;
 }
 
+
+
+/* SECTION 3 - Testimonials */
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: rgb(151, 146, 228);
+    padding-top: 40px;
+    font-size: 35px;
+}
+
+.testimonials p {
+    color: rgb(80, 79, 79);
+    line-height: 30px;
+    padding: 20px 30px 0px 30px;
+    font-size: 20px;
+}
+
+.card-t img {
+    border-radius: 50%;
+}
+
+.card-t .img {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.card-t {
+    margin: 20px 0px;
+    border-radius: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.card-t p {
+    line-height: 30px;
+    padding: 20px 30px 0px 30px;
+    font-size: 20px;
+}
+
+.card-t h3 {
+    padding-top: 20px;
+}
+
+#special {
+    padding-bottom: 80px;
+}
+
+
 /************************************************
      RESPONSIVE
  ************************************************/
@@ -248,7 +301,44 @@ header {
         margin-top: 20px;
     }
 
+    /* Section - 3 */
 
+    .testimonials p {
+        font-size: 15px;
+    }
+
+    .testimonials h2 {
+        padding-top: 20px;
+    }
+
+    .card-t {
+        display: flex;
+        align-items: center;
+        padding: 0px;
+
+    }
+
+    .card-t .img {
+        width: 35%;
+    }
+
+    .card-t .text {
+        width: 60%;
+        padding: 0px 15px;
+    }
+
+    .card-t p {
+        line-height: 20px;
+        font-size: 15px;
+        text-align: left;
+        padding: 0;
+    }
+
+    .card-t h3 {
+        text-align: left;
+    }
+
+    /* Section - 4 */
 
 
 
@@ -341,8 +431,22 @@ header {
         width: 50%;
     }
 
+    /* Section - 3 */
 
+    .card-t .img {
+        width: 20%;
+    }
 
+    .card-t .text {
+        width: 75%;
+    }
+
+    .card-t p {
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    /* Section - 4 */
 
 
 
