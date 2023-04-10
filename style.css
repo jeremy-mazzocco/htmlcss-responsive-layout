@@ -26,7 +26,6 @@ body {
 .bc-violet {
     background-color: rgb(151, 146, 228);
     color: white;
-    padding-bottom: 70px;
 }
 
 .container img {
@@ -243,6 +242,99 @@ header {
 }
 
 
+/* SECTION 4 - Benefits */
+
+.benefits>.row {
+    padding: 50px;
+    display: block;
+}
+
+.benefits>h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 40px 30px;
+
+}
+
+.card-b {
+
+    border-radius: 20px;
+    background-color: white;
+    padding: 30px;
+    margin: 30px 0px;
+}
+
+.card-b>h2 {
+    color: rgb(151, 146, 228);
+    font-size: 25px;
+    margin: 15px 0px;
+
+}
+
+.card-b>p {
+    color: rgb(162, 160, 160);
+    line-height: 30px;
+    font-weight: bold;
+
+}
+
+.card-b>button {
+    color: white;
+    background-color: rgb(151, 146, 228);
+    width: 40%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+/* SECTION 5 - About us */
+
+.aboutus>.row {
+    padding: 50px;
+    display: block;
+}
+
+.card-about>h2 {
+    color: rgb(151, 146, 228);
+    font-size: 45px;
+    margin: 15px 0px;
+}
+
+.card-about>h3 {
+    color: rgb(151, 146, 228);
+    font-size: 25px;
+    margin: 15px 0px;
+
+}
+
+.card-about>p {
+    color: rgb(162, 160, 160);
+    line-height: 30px;
+    font-weight: bold;
+
+}
+
+.card-about>button {
+    color: white;
+    background-color: rgb(151, 146, 228);
+    width: 60%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.card-about>img {
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+
+
 /************************************************
      RESPONSIVE
  ************************************************/
@@ -339,6 +431,26 @@ header {
     }
 
     /* Section - 4 */
+
+    .benefits>.row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-b {
+        width: calc(50% - 10px)
+    }
+
+    /* Section - 5 */
+
+    .aboutus>.row {
+        display: flex;
+        align-items: start;
+    }
+
+    .card-about {
+        width: calc(50% - 25px)
+    }
 
 
 
@@ -448,6 +560,8 @@ header {
 
     /* Section - 4 */
 
-
+    .card-b {
+        width: calc(100% / 3 - 10px)
+    }
 
 }
